@@ -10,7 +10,7 @@ phases:
 #      - CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain nextwork --domain-owner 767397901433 --region ap-south-1 --query authorizationToken --output text`
  #     - export CODEARTIFACT_AUTH_TOKEN
   pre_build:
-  commands:
+    commands:
     - echo "Checking AWS CLI..."
     - aws --version
     - echo "Testing CodeArtifact token fetch..."
